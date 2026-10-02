@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background (dark foggy look).
+   Agar apni forest/mountain photo lagani ho to is ki jagah likhein:
+   background: url("forest.jpg") center / cover no-repeat; */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, #77776f 0%, #4d5855 40%, #26302e 75%, #101716 100%);
+}
+
+/* Glass box in the middle */
+.login-box {
+  width: 100%;
+  max-width: 330px;
+  padding: 30px 28px 26px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 28px;
+  backdrop-filter: blur(8px);
+}
+
+.login-box h1 {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* Input + icon */
+.field {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.field input {
+  width: 100%;
+  padding: 11px 40px 11px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+}
+
+.field input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.field svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  fill: #fff;
+}
+
+/* Remember me + Forgot password */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 22px;
+  font-size: 13px;
+}
+
+.options label {
+  cursor: pointer;
+}
+
+.options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #fff;
+  color: #222;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e4e4e4;
+}
+
+/* Register link at the bottom */
+.register-text {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.register-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
